@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 #include "ShoppingCart.h"
-//#include "ItemToPurchase.h"
+#include <vector>
 using namespace std;
+
 
 //DEFAULT CONSTRUCTOR
 ShoppingCart::ShoppingCart() {
@@ -26,14 +27,19 @@ string ShoppingCart::GetDate() {
 
 void ShoppingCart::AddItem(ItemToPurchase) {
 	//ADDS ITEM TO CARTITEMS VECTOR
-	
-	//for (unsigned int i = 0; i < cartItems.size(); ++i) {
-	//	
-	//}
+	ItemToPurchase item;
+
+	for (unsigned int i = 0; i < cartItems.size(); ++i) {
+		cartItems.push_back(item);
+	}
 }
 
 void ShoppingCart::RemoveItem(string itemName) {
-
+	
+	//size_t nPos = cartItems.find(itemName, 0);
+	//while (nPos != string::npos) {
+	//	nPos = cartItems.find(itemName, nPos + 1);
+	//}
 }
 
 void ShoppingCart::ModifyItem(ItemToPurchase) {
@@ -60,3 +66,4 @@ string ShoppingCart::PrintDescriptions() {
 	
 	return string();
 }
+
