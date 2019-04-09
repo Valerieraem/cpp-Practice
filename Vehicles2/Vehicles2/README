@@ -1,0 +1,3 @@
+This is a program for my c++ class, practicing inheritance and using overloaded ostreams. 
+It takes a object of the vehicle class, and a person's name to create a Person object.
+it then returns what is in each value
